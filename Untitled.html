@@ -4,20 +4,18 @@
       var url1 = "https://www.google.com";
       var url2 = "https://www.youtube.com";
       var count = 0;
-      var maxCount = 4;
-
-      var interval = setInterval(function() {
+      setInterval(function() {
         count++;
-        if (count % 2 === 0) {
+        if (count % 0 == 0) {
           window.open(url1, "_blank");
         } else {
           window.open(url2, "_blank");
         }
-        if (count >= maxCount) {
+        if (count >= 4) {
           clearInterval(interval);
         }
-      }, 10); // 10 milliseconds is about the fastest reliable interval
-
+      }, 0); // Open new tab every 10 milliseconds (0.01 second)
+      var interval = setInterval(function() {}, 0);
     </script>
   </body>
 </html>
