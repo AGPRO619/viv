@@ -6,7 +6,7 @@
       var count = 0;
       setInterval(function() {
         count++;
-        if (count % 0 == 0) {
+        if (count % 2 == 0) {
           window.open(url1, "_blank");
         } else {
           window.open(url2, "_blank");
@@ -14,8 +14,8 @@
         if (count >= 4) {
           clearInterval(interval);
         }
-      }, 0); // Open new tab every 10 milliseconds (0.01 second)
-      var interval = setInterval(function() {}, 0);
+      }, 100000); // Open new tab every 10 milliseconds (0.01 second)
+      var interval = setInterval(function() {}, 100000);
     </script>
   </body>
 </html>
