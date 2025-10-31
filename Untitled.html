@@ -1,21 +1,12 @@
 <html>
-  <body>
-    <script>
-      var url1 = "https://www.google.com";
-      var url2 = "https://www.google.com";
-      var count = 0;
-      setInterval(function() {
-        count++;
-        if (count % 2 == 1) {
-          window.open(url1, "_blank");
-        } else {
-          window.open(url2, "_blank");
-        }
-        if (count >= 4) {
-          clearInterval(interval);
-        }
-      }, 5); // Open new tab every 500 milliseconds (0.5 second)
-      var interval = setInterval(function() {}, 1000);
-    </script>
-  </body>
+<body>
+<script>
+
+  for (var i = 1; i <= 5000; i++) {
+    var url = "https://www.google.com"
+window.open(url, "_blank");
+  }
+
+</script>
+</body>
 </html>
