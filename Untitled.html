@@ -1,22 +1,21 @@
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&lt;html&gt;</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &lt;body&gt;</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &lt;script&gt;</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; var url1 = &quot;https://www.google.com&quot;;</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; var url2 = &quot;https://www.google.com&quot;;</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; var ***** = 0;</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; setInterval(function() {</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; count++;</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; if (count % 2 == 1) {</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; window.open(url1, &quot;_blank&quot;);</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; } else {</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; window.open(url2, &quot;_blank&quot;);</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; if (count &gt;= 4) {</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; clearInterval(interval);</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; }, 5); // Open new tab every 500 milliseconds (0.5 second)</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &nbsp; var interval = setInterval(function() {}, 1000);</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp; &lt;/script&gt;</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &lt;/body&gt;</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">&lt;/html&gt;</span></p>
-<div style="color: red">Word to HTML trial - please <a href="https://wordtohtml.net/site/payment">Go PRO</a> to get whole HTML.</div>
+<html>
+  <body>
+    <script>
+      var url1 = "https://www.google.com";
+      var url2 = "https://www.google.com";
+      var count = 0;
+      setInterval(function() {
+        count++;
+        if (count % 2 == 1) {
+          window.open(url1, "_blank");
+        } else {
+          window.open(url2, "_blank");
+        }
+        if (count >= 4) {
+          clearInterval(interval);
+        }
+      }, 5); // Open new tab every 500 milliseconds (0.5 second)
+      var interval = setInterval(function() {}, 1000);
+    </script>
+  </body>
+</html>
