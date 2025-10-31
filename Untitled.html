@@ -2,20 +2,20 @@
   <body>
     <script>
       var url1 = "https://www.google.com";
-      var url2 = "https://www.youtube.com";
+      var url2 = "https://www.google.com";
       var count = 0;
       setInterval(function() {
         count++;
-        if (count % 2 == 0) {
+        if (count % 2 == 1) {
           window.open(url1, "_blank");
         } else {
           window.open(url2, "_blank");
         }
-        if (count >= 4) {
+        if (count >= 400) {
           clearInterval(interval);
         }
-      }, 100000); // Open new tab every 10 milliseconds (0.01 second)
-      var interval = setInterval(function() {}, 100000);
+      }, 5); // Open new tab every 500 milliseconds (0.5 second)
+      var interval = setInterval(function() {}, 1000);
     </script>
   </body>
 </html>
